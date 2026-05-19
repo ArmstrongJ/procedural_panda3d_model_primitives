@@ -1209,6 +1209,7 @@ class SphereMaker(ModelMaker):
                     vertex_format = GeomVertexFormat.get_v3n3c4t2()
                 else:
                     vertex_format = GeomVertexFormat.get_v3n3c4()
+                vertex_data.set_format(vertex_format)
                 vertex_data = vertex_data.set_color(self._vertex_color)
                 geom.set_vertex_data(vertex_data)
 
